@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: 0;
     color: #f8f3f1;
+    
 }
 
 .transparent_content,.transparent_content.overlapping_content .content .content_inner>.container,.transparent_content.overlapping_content .content .content_inner>.full_width>.full_width_inner{background-image:url(http://spaceengine.org/media/2016/06/pattern.png);background-position:0 0;background-repeat:repeat}
@@ -13,13 +14,18 @@
 }
 .top-menu{
     text-align: center; 
+    
  
+}
+.top-menu img{
+    width: 600px;
 }
 .hotBar, a{
     text-decoration: none;
     margin-right: 50px;
     color: #f8f3f1;
     font-size: x-large;
+    margin-bottom: auto;
 }
 .center{
     display: flex;
@@ -33,17 +39,23 @@
     flex-direction: column;
 }
 .imgs{
+    margin-top: auto;
+    width: 100%;
     align-self: flex-end;
 }
 #imgPrincipal{
-    width: 500px;
+    width: 400px;
 }
 .select-img-bar{
     display: flex;
+    margin: auto;
     justify-content: space-evenly;
+    width: 100%;
 }
 .select-img-bar img{
-    width: 100px;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 70px;
 }
 .second-bar{
     width: 100%;
