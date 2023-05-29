@@ -29,7 +29,7 @@
                             <th>-</th>
                         </tr>
                     </thead>
-                
+
                     <tbody>
                         <tr>
                             <td>
@@ -42,18 +42,21 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="value">R$16.099,00</td><td>
-                            <div class="qty">
-                                <button>
-                                    <i class="bx bx-minus"></i></button>
-                                <span class="qtd">1</span>
-                                <button id="plus" onclick="plus()">
-                                    <i class="bx bx-plus"></i>
-                                </button>
-                            </div>
-                        </td>
+                            <td class="value">R$16.099,00</td>
+                            <td>
+                                <div class="qty">
+                                    <button onclick="minus()">
+                                        <i class="bx bx-minus"></i></button>
+                                    <input class="qtd" value="1">
+                                    <button id="plus" onclick="plus()">
+                                        <i class="bx bx-plus"></i>
+                                    </button>
+                                </div>
                             </td>
-                            <td class="Tprice"><p>16.099,00</p></td>
+                            </td>
+                            <td class="Tprice">
+                                <p>16.099,00</p>
+                            </td>
                             <td>
                                 <button class="remove"><i class="bx bx-x"></i></button>
                             </td>
@@ -79,10 +82,36 @@
                         <span class="Tvalue"></span>
                     </footer>
                 </div>
-                <button>Finalizar Compra</button>
+                <button href="#Pagamento">Finalizar Compra</button>
             </aside>
         </div>
     </main>
 </body>
+<footer class="Pagamento">
+    <section class="pagamento">
+        <div class="form-pagamento">
+            <form method="POST">
+                <div class="form-100">
+                    <label>Email:</label>
+                    <input type="text">
+                </div>
+                <div  class="form-100">
+                    <label>Dados do Cartão</label>
+                    <input type="text" placeholder="xxxx xxxx xxxx xxxx">
+                    <div class="form-50">
+                        <input type="text" placeholder="DD/MM">
+                        <input type="text" placeholder="CVC">
+                    </div>
+                </div>
+                <div class="form-100">
+                    <input type="text" placeholder="Nome no Cartão">
+                </div>
+                <div class="form-100">
+                    <input type="text" class="pagar" value="PAGAR">
+                </div>
+            </form>
+        </div>
+    </section>
+</footer>
 
 </html>
