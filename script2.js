@@ -1,4 +1,4 @@
-var qtd = parseInt(document.getElementsByClassName('qtd'));
+var qtd = parseInt(document.getElementById('qtd').value);
 
 function plus(){
     qtd = qtd + 1;
@@ -14,7 +14,7 @@ function minus(){
 
 function atualiza(){
     var Vtotal = 16099 * qtd;
-    document.getElementsByClassName('Tprice').innerHTML = Vtotal;
-    document.getElementsByClassName('qtd').value=qtd; 
+    document.getElementsByClassName('Tprice').value = Vtotal;
+    document.getElementById('qtd').value=qtd; 
     console.log(Vtotal,qtd);
 }
