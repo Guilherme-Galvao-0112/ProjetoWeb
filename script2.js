@@ -14,7 +14,8 @@ function minus(){
 
 function atualiza(){
     var Vtotal = 16099 * qtd;
-    document.getElementsByClassName('Tprice').value = Vtotal;
     document.getElementById('qtd').value=qtd; 
+    document.getElementById('price').innerHTML=(Vtotal);
+    document.getElementById('TPrice').innerHTML=(Vtotal);
     console.log(Vtotal,qtd);
 }
